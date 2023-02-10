@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/592bc71e60.js" crossorigin="anonymous"></script>
+    <title>BookYourTrain</title>
+</head>
+<body>
+    <nav class="navbar bg-dark " data-bs-theme="dark" >
+        <div class="title">
+            <i class="logo fa-solid fa-train fa-2x"></i> 
+            <a class="navbar-brand navbar-title h1" href=""><span class="h3">Book<span>Your</span>Train</span></a>
+        </div>
+        <div class="nav-button">
+          <button type="button" class="welcome-button btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#sign-up">sign-up</button>
+          <!-- sign-up modal   -->
+          <div class="modal fade " id="sign-up" tabindex="-1" aria-labelledby="sign-up" aria-hidden="true" data-bs-theme="dark" >
+              <div class="modal-dialog">
+                <div class="modal-content bg-light">
+                  <div class="modal-header">
+                    <h1 class="fs-5" style="color:black;" id="sign-up">sign-up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <button type="button" class="welcome-button btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#Login">Login</button>
+            <!-- Login modal -->
+            <div class="modal fade " id="Login" tabindex="-1" aria-labelledby="Login" aria-hidden="true" data-bs-theme="dark" >
+              <div class="modal-dialog">
+                <div class="modal-content bg-light">
+                  <div class="modal-header">
+                    <h1 class="fs-5" style="color:black;" id="Login">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                     <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+        </div>
+    </nav>
+    <section id="Welcome" class="background">
+       <nav class="welcome-navbar navbar navbar-expand-lg navbar2" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="welcome-row row">
+            <div class="col-lg-6">
+                <div class="heading">
+                  <h1>Welcome To Book <span>Your</span> Train</h1>
+                  <p>We save your time both while purchasing ,the check-in during travel</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="heading1" >
+                <form class="row g-3">
+                    <div class="col-md-5">
+                      <!-- <label for="inputEmail4" class="form-label">Travelling Rout</label> -->
+                      <h5 class="form-label">Travelling Rout</h5>
+                      <input type="From" class="form-control from" id="" placeholder="From">
+                    </div> 
+                    <div class="col-md-1">
+                        <input type="From" class="form-control from1 " id="" >
+                    </div>
+                    <div class="col-md-5 ">
+                      <input type="From" class="form-control from from1" id="" placeholder="To">
+                    </div>
+                    <div class="col-6">
+                      <h5 class="form-label">Date</h5>
+                      <input type="Date" class="form-control" id="inputAddress">
+                    </div>
+                    <div class="col-6">
+                        <input type="date" class="form-control from1" id="inputAddress2" placeholder="">
+                    </div>
+                    <div class="col-md-6">
+                      <h5 class="form-label">Travelling person</h5>
+                      <input type="text" class="form-control" id="inputCity" placeholder="No of person">
+                    </div>
+                    
+                    <div class="col-12 col-submit">
+                      <button type="submit" class="btn btn-danger submit-btn">Submit</button>
+                    </div>
+                  </form>
+                  </div>
+            </div>
+
+          </div>
+    </section>
+    
+    <section id="Destination">
+      <nav class="navbar">
+        
+        <span class="navbar-brand mb-0 h1"><h3>TOP TRAVEL DESTINATIONS</h3></span>
+          <button class="btn btn-outline-success me-2" type="submit">BROWSE</button>
+        
+      </nav>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card" style="width: 20.5rem;">
+              <img src="images/NewYork.jpg" class="card-img-top" alt="...">
+              <div class="row">
+                  <div class="col-lg-4 ps-3">
+                      <h5 class="city-des">New York</h5>
+                      <p class="card-text">Penn station NY</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <i class="fa-solid fa-arrow-right-arrow-left my-4 mx-5"></i>
+                  </div>
+                  <div class="col-lg-4 pe-3"> 
+                      <h5>London</h5>
+                      <p class="card-text">xyz</p>
+                  </div>
+              </div>
+              <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 20.5rem;">
+              <img src="images/chicago.jpg" class="card-img-top" alt="...">
+              <div class="row">
+                <div class="col-lg-4 ps-3">
+                    <h5 class="city-des">New York</h5>
+                    <p class="card-text">Penn station NY</p>
+                </div>
+                <div class="col-lg-4">
+                  <i class="fa-solid fa-arrow-right-arrow-left my-4 mx-5"></i>
+                </div>
+                <div class="col-lg-4 pe-3"> 
+                    <h5>London</h5>
+                    <p class="card-text">xyz</p>
+                </div>
+            </div>
+              <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 20.5rem;">
+              <img src="images/japan.jpg" class="card-img-top" alt="...">
+              <div class="row">
+                <div class="col-lg-4 ps-3">
+                    <h5 class="city-des">New York</h5>
+                    <p class="card-text">Penn station NY</p>
+                </div>
+                <div class="col-lg-4">
+                  <i class="fa-solid fa-arrow-right-arrow-left my-4 mx-5"></i>
+                </div>
+                <div class="col-lg-4 pe-3"> 
+                    <h5>London</h5>
+                    <p class="card-text">xyz</p>
+                </div>
+            </div>
+              <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card" style="width: 20.5rem;">
+              <img src="images/Michigan.jpg" class="card-img-top" alt="...">
+              <div class="row">
+                <div class="col-lg-4 ps-3">
+                    <h5 class="city-des">New York</h5>
+                    <p class="card-text">Penn station NY</p>
+                </div>
+                <div class="col-lg-4">
+                  <i class="fa-solid fa-arrow-right-arrow-left my-4 mx-5"></i>
+                </div>
+                <div class="col-lg-4 pe-3"> 
+                    <h5>London</h5>
+                    <p class="card-text">xyz</p>
+                </div>
+            </div>
+              <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 20.5rem;">
+              <img src="images/Taiwan.jpg" class="card-img-top" alt="...">
+              <div class="row">
+                <div class="col-lg-4 ps-3">
+                    <h5 class="city-des">New York</h5>
+                    <p class="card-text">Penn station NY</p>
+                </div>
+                <div class="col-lg-4">
+                  <i class="fa-solid fa-arrow-right-arrow-left my-4 mx-5"></i>
+                </div>
+                <div class="col-lg-4 pe-3"> 
+                    <h5>London</h5>
+                    <p class="card-text">xyz</p>
+                </div>
+            </div>
+              <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card" style="width: 20.5rem;">
+              <img src="images/washington.jpg" class="card-img-top" alt="...">
+              <div class="row">
+                <div class="col-lg-4 ps-3">
+                    <h5 class="city-des">New York</h5>
+                    <p class="card-text">Penn station NY</p>
+                </div>
+                <div class="col-lg-4">
+                  <i class="fa-solid fa-arrow-right-arrow-left my-4 mx-5"></i>
+                </div>
+                <div class="col-lg-4 pe-3"> 
+                    <h5>London</h5>
+                    <p class="card-text">xyz</p>
+                </div>
+            </div>
+              <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="LatestPost">
+        <h2>LATEST POST</h2>
+        <div class="row">
+            <div class="col-lg-6">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="images/train station.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="images/train_Destination.jpg" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  
+                </div>
+                <div class="col-md-4">
+                  <img src="images/travel Destination.jpg" class="img-fluid" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                  
+                </div>
+                <div class="col-md-4">
+                  <img src="images/trip.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="E-Ticket">
+      <div class="Transprancy">
+        <div class="E-Ticket-inside">
+          <h2>E-TICKET ADVANTAGES</h2>
+          <div class="row">
+              <div class="col-lg-4">
+                <i class="fa-solid fa-computer fa-5x"></i>
+                <hr class="hr">
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                </p>
+  
+              </div>
+              <div class="col-lg-4">
+                <i class="fa-solid fa-building fa-5x"></i>
+                <hr class="hr">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptatibus et hic odit autem quis eos quo dolore perferendis repellat distinctio, 
+                </p>
+              </div>
+              <div class="col-lg-4">
+                <i class="fa-brands fa-chrome fa-5x"></i>
+                <hr class="hr">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor dignissimos vitae qui ut maxime quas maiores, culpa earum debitis dolorem,
+                </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Testimonials">
+      <h2>TESTIMONIALS</h2>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <!-- <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div> -->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <div class="row carousel-row">
+                <div class="col-lg-6 ">
+                  <div class="card  carousel-card" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images/lady_1.png" class="img-fluid" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body cb">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card carousel-card" style="max-width: 540px;">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img src="images/men_1.png" class="img-fluid rounded-start" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body cb">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <div class="row">
+              <div class="col-lg-6 ">
+                <div class="card  carousel-card" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="images/lady_1.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body cb">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card carousel-card" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="images/men_1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body cb">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <div class="row">
+              <div class="col-lg-6 ">
+                <div class="card  carousel-card" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="images/lady_1.png" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body cb">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card carousel-card" style="max-width: 540px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="images/men_1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body cb">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Information" class="bg-dark" data-bs-theme="dark">
+     
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        
+        <hr style="color: #fff;">
+        <div class="footer-logo">
+          <i class="logo fa-solid fa-train fa-2x"></i> 
+          <a class="navbar-brand navbar-title h1" href="">Book<span>Your</span>Train</a>
+        </div>
+        
+      
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
