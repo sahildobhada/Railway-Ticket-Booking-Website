@@ -1,0 +1,162 @@
+body{
+    margin: 0px;
+  
+}
+/* navbar1 */
+.title{
+    position: relative;
+    left:240px;
+}
+.logo{
+    color:rgb(228, 73, 17);
+    display: inline-block;
+}
+.welcome-button{
+    margin:auto 5px;
+}
+.nav-button{
+    position:relative;
+    right: 240px;
+}
+.form-label{
+    text-align: left;
+}
+.from{
+    background-image: url("images/pin.png");
+    background-repeat: no-repeat;
+  
+    background-size: 25px;
+    background-position: right;
+
+}
+.from1{
+    position:relative;
+    margin-top:32px;
+
+}
+.background{
+    /* https://source.unsplash.com/1600x800/?Train */
+    background-image: url("images/train_black.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.col-submit{
+    margin-top: 50px;
+}
+
+.welcome-navbar{
+    padding-left: 15%;
+    background-color: black;
+    opacity: 0.5;
+    color: #fff;
+    
+}
+.welcome-row{
+    /* margin :500px ; */
+    padding: 3% 15% ;
+    margin:0px;
+    /* padding-right: 14%; */
+    margin-top: 100px;
+    padding-bottom: 0;
+    /* padding-bottom: 100px; */
+
+}
+.heading{
+    margin:20% 20px;
+    margin-left: 0;
+    color: #fff;
+    text-align: left;
+}
+.heading1{
+    background-color: rgba(0,0,0,.5);
+    padding:20px;
+    color:#fff;
+    padding-bottom: 200px;
+}
+
+
+/* Destination */
+#Destination{
+    padding:7% 15%;
+    background-color: #fff;
+}
+.row{
+    padding-top: 10px;
+}
+.card-img-top{
+    height: 300px;
+}
+/* LatestPost */
+#LatestPost{
+    padding:3% 15% 7% 15%;
+    background-color: #EEEEEE;
+}
+/* E-ticket */
+#E-Ticket{
+   
+    /* padding: 3% 15% 5% 15%; */
+    background-image: url("images/view.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#fff;
+    text-align: center;
+    
+}
+.Transprancy{
+    background-color: rgba(201, 107, 19, 0.5);
+}
+.E-Ticket-inside{
+    padding: 3% 15% 5% 15%;
+}
+
+.hr{
+    width:30%;
+    position:relative;
+    left:120px;
+   margin:30px 0px;
+}
+/* Testimonials */
+#Testimonials{
+    padding: 3% 15% 5% 15%;
+}
+.carousel-card{
+    border-color: #fff;
+}
+.cb{
+    text-align: left;
+}
+/* Informat{ion */
+#Information{
+    padding: 3% 15% 3% 15%;
+    padding-bottom: 0;
+    text-align: center;
+}
+.footer-logo{
+    position:relative;
+    left:20px;
+    color: #fff;
+    display: inline-block;
+    padding-bottom: 20px;;
+}
+/* TBTitleBackGround */
+.TBTitleBackGround{
+    padding: 3% 15%;
+    text-align: center;
+    background-image: url("images/platform\ 4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block{
+    background-color: #fff;
+}
+.card-ticket{
+    margin:3% 15%;
+    background-color:#ffffffdc;
+}
+.footer{
+    padding:3% 15%;
+}
+.ticket-bill{
+    margin:3% 25%;
+}
