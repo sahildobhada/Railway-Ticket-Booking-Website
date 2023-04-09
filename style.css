@@ -81,7 +81,7 @@ body{
     background-color: #fff;
 }
 .row{
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .card-img-top{
     height: 300px;
@@ -137,4 +137,26 @@ body{
     color: #fff;
     display: inline-block;
     padding-bottom: 20px;;
+}
+/* TBTitleBackGround */
+.TBTitleBackGround{
+    padding: 3% 15%;
+    text-align: center;
+    background-image: url("images/platform\ 4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block{
+    background-color: #fff;
+}
+.card-ticket{
+    margin:3% 15%;
+    background-color:#ffffffdc;
+}
+.footer{
+    padding:3% 15%;
+}
+.ticket-bill{
+    margin:3% 25%;
 }
