@@ -15,74 +15,7 @@
             <i class="logo fa-solid fa-train fa-2x"></i> 
             <a class="navbar-brand navbar-title h1" href=""><span class="h3">Book<span>Your</span>Train</span></a>
         </div>
-        <div class="nav-button">
-          <button type="button" class="welcome-button btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#sign-up">sign-up</button>
-          <!-- sign-up modal   -->
-          <div class="modal fade " id="sign-up" tabindex="-1" aria-labelledby="sign-up" aria-hidden="true" data-bs-theme="dark" >
-              <div class="modal-dialog">
-                <div class="modal-content bg-light">
-                  <div class="modal-header">
-                    <h1 class="fs-5" style="color:black;" id="sign-up">sign-up</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                      </div>
-                      <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-            <button type="button" class="welcome-button btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#Login">Login</button>
-            <!-- Login modal -->
-            <div class="modal fade " id="Login" tabindex="-1" aria-labelledby="Login" aria-hidden="true" data-bs-theme="dark" >
-              <div class="modal-dialog">
-                <div class="modal-content bg-light">
-                  <div class="modal-header">
-                    <h1 class="fs-5" style="color:black;" id="Login">Login</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                      </div>
-                      <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1">
-                      </div>
-                     <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                      </div>
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </form>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-        </div>
+        
     </nav>
     <section id="Welcome" class="background" style="background-image: url(images/train_black.jpg);">
        <nav class="welcome-navbar navbar navbar-expand-lg navbar2" data-bs-theme="dark">
@@ -117,28 +50,30 @@
             </div>
             <div class="col-lg-6">
               <div class="heading1" >
-                <form class="row g-3">
+                <form class="row g-3" action="/destinationdata" method="post">
                     <div class="col-md-5">
                       <!-- <label for="inputEmail4" class="form-label">Travelling Rout</label> -->
                       <h5 class="form-label">Travelling Rout</h5>
-                      <input type="From" class="form-control from" id="" placeholder="From">
+                      <input type="From" class="form-control from" id="" placeholder="From" name="currentlocation">
+                      
+                      
                     </div> 
                     <div class="col-md-1">
                         <input type="From" class="form-control from1 " id="" >
                     </div>
                     <div class="col-md-5 ">
-                      <input type="From" class="form-control from from1" id="" placeholder="To">
+                      <input type="From" class="form-control from from1" id="" placeholder="To" name="destination">
                     </div>
                     <div class="col-6">
                       <h5 class="form-label">Date</h5>
-                      <input type="Date" class="form-control" id="inputAddress">
+                      <input type="Date" class="form-control" id="inputAddress" name="datevalue">
                     </div>
                     <div class="col-6">
-                        <input type="date" class="form-control from1" id="inputAddress2" placeholder="">
+                        
                     </div>
                     <div class="col-md-6">
                       <h5 class="form-label">Travelling person</h5>
-                      <input type="text" class="form-control" id="inputCity" placeholder="No of person">
+                      <input type="text" class="form-control" id="inputCity" placeholder="No of person" name="numberoftravellingperson">
                     </div>
                     
                     <div class="col-12 col-submit">
