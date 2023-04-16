@@ -9,6 +9,7 @@ const app=express();
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(express.static("public"))
 app.set('view engine', 'ejs');
+
 const url="mongodb+srv://sahil_Dobhada:sahil30102001@cluster0.nnqiyhy.mongodb.net/BookYourTicket?retryWrites=true&w=majority"
 
 const travelshema=new mongoose.Schema({
@@ -77,7 +78,7 @@ app.post("/register",function(req,res){
 app.post("/login",async function(req,res){
     const username=req.body.username;
     const password=req.body.password;
-    const p=await person.findOne({email:email}).exec()
+    const p=await personaldata.findOne({username:username}).exec()
     if(p){
 
     bcrypt.compare(password, p.password, function(err, result) {
@@ -144,18 +145,8 @@ app.post("/TicketBill",function(req,res){
         seatnumber.push(value);
         value+=1;
     }
-    res.render("TicketBill",{departurestation:infosplit[0],arrivalstation:infosplit[1],departuretime:infosplit[2],arrivaltime:infosplit[3],seatnumber:seatnumber,price:100*numberoftraveller});
+    res.render("TicketBill",{name:userregister,departurestation:infosplit[0],arrivalstation:infosplit[1],departuretime:infosplit[2],arrivaltime:infosplit[3],seatnumber:seatnumber,price:100*numberoftraveller});
 })
-
-
-
-
-
-
-
-
-
-
 
 
 app.listen(process.env.port || 3000)
