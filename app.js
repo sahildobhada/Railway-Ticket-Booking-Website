@@ -29,6 +29,7 @@ const schema=new mongoose.Schema({
 
 const persondataschema=new mongoose.Schema({
     username:String,
+    email:String,
     password:String
 })
 const personaldata=new mongoose.model("persondata",persondataschema);
@@ -57,15 +58,17 @@ app.get("/login",function(req,res){
 
 app.post("/register",function(req,res){
     const username=req.body.username;
+    const email=req.body.email;
     const password=req.body.password;
     userregister=username;
     bcrypt.hash(password,saltrounds,async function(err,hash){
         if(!err){
             const p1=new personaldata({
                 username:username,
+                email:email,
                 password:hash
             })
-            const p=await personaldata.findOne({username:username}).exec()
+            const p=await personaldata.findOne({email:email}).exec()
             if(!p){
                 p1.save()
                 res.render('index')
@@ -76,9 +79,9 @@ app.post("/register",function(req,res){
     })
 })
 app.post("/login",async function(req,res){
-    const username=req.body.username;
+    const email=req.body.email;
     const password=req.body.password;
-    const p=await personaldata.findOne({username:username}).exec()
+    const p=await personaldata.findOne({email:email}).exec()
     if(p){
 
     bcrypt.compare(password, p.password, function(err, result) {
