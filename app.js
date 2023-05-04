@@ -56,6 +56,10 @@ app.get("/login",function(req,res){
     res.render('login')
 })
 
+app.get("/index",function(req,res){
+    res.render('index')
+})
+
 app.post("/register",function(req,res){
     const username=req.body.username;
     const email=req.body.email;
@@ -115,7 +119,7 @@ app.post("/destinationdata",async function(req,res){
 
  if(obj1 && obj2){
     console.log("In TicketBooking")
-    traindetail.push({train:trainname[i],station:obj1.station,sourceTime:obj1.sourcetime,destinationtime:obj1.destinationtime,ds:obj2.station})
+    traindetail.push({train:trainname[i],station:obj1.station,sourceTime:obj1.sourcetime,destinationtime:obj2.destinationtime,ds:obj2.station})
     console.log(traindetail)
     console.log({train:trainname[i],station:obj1.station,sourceTime:obj1.sourcetime,destinationtime:obj2.destinationtime,ds:obj2.station});
     res.render("TicketBooking",{source:source,Destination:destination,train:traindetail})
